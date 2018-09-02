@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/landmark_img"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/starcity" />
+
+    <TextView
+        android:id="@+id/Landmark_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Star City"
+        android:textSize="18sp"
+        android:typeface="sans"
+        app:fontFamily="serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Location"
+            android:typeface="sans"
+            app:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sotto cor Jalandoni Sts. CCP Complex, Roxas Blvd., Pasay, Luzon 1300, Philippines"
+            android:textSize="12sp"
+            android:typeface="sans"
+            app:fontFamily="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Distance_text"
+            android:layout_width="6dp"
+            android:layout_height="74dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Distance from UST"
+            android:typeface="sans"
+            app:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="7.4km via Roxas Blvd/R-1"
+            android:textSize="12sp"
+            android:typeface="sans"
+            app:fontFamily="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next" />
+    </LinearLayout>
+
+</LinearLayout>
